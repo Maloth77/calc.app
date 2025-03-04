@@ -3,7 +3,7 @@
 
  java installation steps 
  --------------------------------------
-sudo apt update
+sudo apt update &&
 sudo apt install openjdk-17-jdk maven -y
 
 maven installation 
