@@ -1,0 +1,6 @@
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY target/calculator-app-1.0.0.jar calculator-app.jar
+EXPOSE 9090
+ENTRYPOINT ["java", "-jar", "calculator-app.jar", "--server.port=9090"]
+
