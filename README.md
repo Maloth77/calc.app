@@ -48,6 +48,33 @@ Expected output:
 
 8
 
+docker file :
+-----------------------------
+
+docker installation:
+------------------------------
+
+sudo apt install docker.io
+
+and add docker group to the current user 
+
+sudo usermod -aG $USER && newgrp docker 
+
+image creation :
+-------------------------------
+
+docker build -t <calculator-app:v1> .
+
+docker run  -d -p 9090:9090 <image id> 
+
+expected output 
+---------------------------
+when you hit the url 
+
+Calculator App is Running on Port 9090!
+
+
+
 
 
    
